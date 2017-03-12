@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Survey Questions<h1>
+		<div id="line" style="border-bottom: solid 1px #D2D2D2;">
+			
+		</div>
+		<h2>About You</h2>
+		<form action="Submit" method="POST" role="form">
+		<div class="form-group">
+			<h4>Your Name (Required)</h4>
+			<input type="text" class="form-control" id="name" placeholder="Type name here">
+			<label for="name"><h4>Link to Photo Image</h4></label>
+			<input type="text" class="form-control" id="photoUrl" placeholder="http://...">
+		</div>
+	<hr>
+		<div>
+	
+		<h2>Question 1</h2>
+
+    		<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+    		<div class="col-lg-2">
+    		<select class="form-control " id="Select1">
+      		<option>1 (Strongly Disagree)</option>
+      		<option>2</option>
+      		<option>3</option>
+     		<option>4</option>
+      		<option>5 (Strongly Agree)</option>
+    		</select>
+    		</div>
+    	<br>	
+		
+		<h2>Question 2</h2>
+
+    		<h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+    		<div class="col-lg-2">
+    		<select class="form-control " id="Select2">
+      		<option>1 (Strongly Disagree)</option>
+      		<option>2</option>
+      		<option>3</option>
+     		<option>4</option>
+      		<option>5 (Strongly Agree)</option>
+    		</select>
+    		</div>
+    	<br>	
+		
+		<h2>Question 3</h2>
+
+    		<h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+    		<div class="col-lg-2">
+    		<select class="form-control " id="Select3">
+      		<option>1 (Strongly Disagree)</option>
+      		<option>2</option>
+      		<option>3</option>
+     		<option>4</option>
+      		<option>5 (Strongly Agree)</option>
+    		</select>
+    		</div>
+    	<br>
+		
+		<h2>Question 4</h2>
+
+    		<h4>You rarely do something just out of sheer curiosity.</h4>
+    		<div class="col-lg-2">
+    		<select class="form-control " id="Select4">
+      		<option>1 (Strongly Disagree)</option>
+      		<option>2</option>
+      		<option>3</option>
+     		<option>4</option>
+      		<option>5 (Strongly Agree)</option>
+    		</select>
+    		</div>
+		<br>
+
+		<h2>Question 5</h2>
+
+    		<h4>People can rarely upset you.</h4>
+    		<div class="col-lg-2">
+    		<select class="form-control " id="Select5">
+      		<option>1 (Strongly Disagree)</option>
+      		<option>2</option>
+      		<option>3</option>
+     		<option>4</option>
+      		<option>5 (Strongly Agree)</option>
+    		</select>
+    		</div>
+    	<br>	
+		
+		<h2>Question 6</h2>
+
+    		<h4>It is often difficult for you to relate to other people’s feelings.</h4>
+    		<div class="col-lg-2">
+    		<select class="form-control " id="Select6">
+      		<option>1 (Strongly Disagree)</option>
+      		<option>2</option>
+      		<option>3</option>
+     		<option>4</option>
+      		<option>5 (Strongly Agree)</option>
+    		</select>
+    		</div>
+    	<br>	
+		
+		<h2>Question 7</h2>
+
+    		<h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+    		<div class="col-lg-2">
+    		<select class="form-control " id="Select7">
+      		<option>1 (Strongly Disagree)</option>
+      		<option>2</option>
+      		<option>3</option>
+     		<option>4</option>
+      		<option>5 (Strongly Agree)</option>
+    		</select>
+    		</div>
+    	<br>	
+		
+		<h2>Question 8</h2>
+
+    		<h4>You rarely get carried away by fantasies and ideas.</h4>
+    		<div class="col-lg-2">
+    		<select class="form-control " id="Select8">
+      		<option>1 (Strongly Disagree)</option>
+      		<option>2</option>
+      		<option>3</option>
+     		<option>4</option>
+      		<option>5 (Strongly Agree)</option>
+    		</select>
+    		</div>
+    	<br>	
+		
+		<h2>Question 9</h2>
+
+    		<h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+    		<div class="col-lg-2">
+    		<select class="form-control " id="Select9">
+      		<option>1 (Strongly Disagree)</option>
+      		<option>2</option>
+      		<option>3</option>
+     		<option>4</option>
+      		<option>5 (Strongly Agree)</option>
+    		</select>
+    		</div>
+    	<br>	
+		
+		<h2>Question 10</h2>
+
+    		<h4>You feel more energetic after spending time with a group of people.</h4>
+    		<div class="col-lg-2">
+    		<select class="form-control " id="Select10">
+      		<option>1 (Strongly Disagree)</option>
+      		<option>2</option>
+      		<option>3</option>
+     		<option>4</option>
+      		<option>5 (Strongly Agree)</option>
+    		</select>
+    		</div>
+	
+		<br>
+		<br>
+		<br>
+		<button type="submit" class="btn btn-primary col-lg-12"><span class="glyphicon glyphicon-ok-sign"></span> Submit</button>
+		<br>
+
+	
+	</form>
+	<br>
+	<hr>
+	<footer class="footer">
+	<div class="container">
+		<p>
+			<a href="/api/friends">API Friends List</a>
+			|
+			<a href="https://github.com/laderhoser/Friend-Finder">GitHub Repo</a>
+		</p>
+	</div>
+</footer>
+</div>
+
+</body>
+</html>
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+
+    // In this code below we create the Front-end Javascript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+    $(".submit").on("click", function(){
+
+        // Here we grab the form elements
+        var newFriend = {
+            customerName: $('#name').val().trim(),
+            photoUrl: $('#photoUrl').val().trim(),
+          
+        };
+
+        console.log(newFriend);
+
+        // This line is the magic. It's very similar to the standard ajax function we used.
+        // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+        // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+        // depending on if a tables is available or not.
+
+        // Here we get the location of the root page.
+        // We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
+        var currentURL = window.location.origin;
+
+        $.post(currentURL + "/api/friends", newFriend,
+        function(data){
+
+      
+            if(data == true){
+                alert("Yay! You are officially booked!")
+            }
+
+          
+            if(data == false){
+                alert("Sorry you are on the wait list")
+            }
+
+            // Clear the form when submitting
+            // $('#reserve_name').val("");
+            // $('#reserve_phone').val("");
+            // $('#reserve_email').val("");
+            // $('#reserve_uniqueID').val("");
+
+        });
+
+return false;
+
+});
+
+</script>
