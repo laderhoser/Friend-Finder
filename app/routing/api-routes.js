@@ -9,6 +9,8 @@ module.exports = function (app) {
 
 	app.get('/api/friends', function (req, res) {
 		res.json(friendsData);
+
+
 	});
 
 	
@@ -24,14 +26,10 @@ module.exports = function (app) {
 	app.post('/api/friends', function (req, res) {
 		// Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
 		// It will do this by sending out the value "true" have a table
-		if (friendsData.length < 5) {
-			tableData.push(req.body);
-			res.json(true); // KEY LINE
-		} else { // Or false if they don't have a table
+	
 			friendsData.push(req.body);
-			res.json(false); // KEY LINE
-		}
-	});
+			
+	
 
 	// ---------------------------------------------------------------------------
 	// I added this below code so you could clear out the table while working with the functionality.
@@ -39,9 +37,11 @@ module.exports = function (app) {
 
 	app.post('/api/clear', function () {
 		// Empty out the arrays of data
-		friendData = [];
+		friendsData = [];
 		
 
-		console.log(tableData);
+		console.log(friendsData);
 	});
-};
+});
+
+}
